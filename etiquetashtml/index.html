@@ -7,7 +7,15 @@
     <title>Etiquetas html</title>
 </head>
 <body>
-    <style> 
+    <style> .boton {border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;}
         li {
             color: rgba(20, 20, 20, 0.904);
         } h3{color: red;}
@@ -26,7 +34,7 @@
         <p>La etiqueta abbr me sirve para abreviar</p>
         <abbr title= "lenguaje de hipertexto"> HTML </abbr>
         <li style="list-style: decimal;">
-            <h3>&lt;address&gt;</h3>
+            <h3>&lt;address&gt;</h3> </li>
         <p>Define la informacion de contacto del autor/propietario del documento u articulo. <br> Ejemplo: </p>
         Escrito por <a href="https://github.com/gualhu1">Hugo Gutiérrez </a>
         </li>
@@ -59,6 +67,54 @@
         <p> Define un boton en el que se puede hacer click. <br>
             dentro de un &lt;botton&gt; puedes poner texto (y etiquetas como &lt;i&gt;, &lt;b&gt;, &lt;strong&gt;, &lt;img&gt;, etc.) ! Eso no es <br>
             no es posible con un boton creado con el &lt;imput&gt;</p>
+            <strong>Sugerencia:</strong> Especifique siempre el type de un &lt;button&gt;, para indicar a los navegadores que tipo de boton <br>
+            es. <br>
+            <strong> Puede diseñar botones facilmente con CSS</strong> <br> <br>
+            Ejemplo: <br> <br>
+            <button class="boton" style="background-color: #4CAF50;"> Boton 1 </button>
+            <button class="boton" style="background-color: #008CBA;"> Boton 2 </button>
+        <li style="list-style: decimal;">
+                <h3>&lt;form&gt;</h3>
+        <p> Es un contenedor paran diferentes tipos de entrada, como: campos de texto, casillas de verificacion, botones de opcion, botones de envio, etc. <br>  </p>
+            <ul>
+                <li>&lt;input type = "text"&gt; <br><br> Muestra un campo de entrada de texto de una sola linea </li>
+                <input type="text"> <br>
+                <li>&lt;input type "radio"&gt; <br><br> Muestra un boton de radio (para seleccionar una de muchas opciones) </li> <br>
+                <input type="radio" name="tipo1"> <input type="radio" name="tipo1"> <input type="radio" name="tipo1"> <br>
+                <li>&lt;input type "checkbox"&gt;</li> <br> Muestra una casilla de verificación(para selecionar cero o más opciónes) <br>
+                <input type="checkbox"><input type="checkbox"> <br>
+                <li>&lt;input type "submit"&gt;</li> Muestra un botón de envio(para enviar el formulario) <br> <br>
+                <input type="submit"> <br>
+                <li>&lt;input type "button"&gt;</li> Muestra un botón en e que sepuede hacer clic <br><br>
+                <input type="button"><br>
+            </ul>
+        <li style="list-style: decimal;">
+            <h3>&lt;footer&gt;</h3>
+        <p>Define un pie de página para un documento o sección <br> 
+            Normalmente contiene:</p>   
+           <Ul>
+            <li>Información de autoría</li> <li>Información de registro</li> <li> Información del contacto
+            </li> <li>Mapa del sitio</li> <li>Volver a los enlaces superiores</li> <li>Documentos relacionados</li> </ul> <br>
+            <a href="example/footer.html"> Ejemplo footer</a>
+            <li style="list-style: decimal;">
+                <h3>&lt;header&gt;</h3>
+        <p> Representa un contenedor de contenido introductorio o un conjunto de enlaces de navegación. <br>
+            Normalmente contiene:
+            </p>
+           <ul>
+            <li>Uno a más elementos de encabezado (&lt;h1&gt; - &lt;h6&gt;)</li> <li>Logotipo o icono
+            </li> <li>información de autoría</li> </ul> <br>
+            <strong>NOTA:</strong> Puede tener varios &lt;header&gt; en un documento HTML. Sin embargo, <br> no sepuede colocar
+            dentro de un &lt;footer&gt; &lt;address&gt; u otro &lt;header&gt; <br>
+            Ejemplo: <br> <br>
+            <strong><h1> Encabezado de la página principal aquí </h1></strong> <br>
+            <h2>Publicado el 19/08/2022</h2>
+        <li style="list-style: decimal;">
+                <h3>&lt;hgroup&gt;</h3>
+            <p> Generalmente se usa para agrupar un conjunto de uno o más elementos &lt;h1&gt; - &lt;h6&gt;, para agrupar, por <br>
+                ejemplo, un titulo de sección y un subtitulo adjunto.</p>
+            <a href="example/hgroup.html"> Ejemplo hgroup</a>
+
     </ul>
     
 </body>
